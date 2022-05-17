@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content
+  ="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/745407a3fb.js" crossorigin="anonymous"></script>
+  <script src="/index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+
+  <title>Users</title>
+</head>
+<body>
+  
+   <section class="form">
+     <form action="#" novalidate>
+       <div class="form-group">
+         <label>Subject</label>
+         <div class="filter-type-container">
+           <div class="select-style" placeholder="I need...">I need...</div>
+           <div class="filter-content-container">
+             <ul class="multiselect-dropdown">
+               <p class="title">You can select several items</p>
+               <li>
+                 <a tabindex="0">
+                   <label class="checkbox" id="checkBoxLabel_1">
+                     <input type="checkbox" name="subject" value="SEO">
+                     <span class="checkbox-text">SEO</span>
+                     <span class="checkmark"></span>
+                   </label>
+                 </a>
+               </li>
+               <li>
+                 <a tabindex="0">
+                   <label class="checkbox" id="checkBoxLabel_2">
+                    <input type="checkbox" name="subject" value="Web Development">
+
+                     <span class="checkbox-text">Web Development</span>
+                     <span class="checkmark"></span>
+                   </label>
+                 </a>
+               </li>
+               <li>
+                <a tabindex="0">
+                  <label id="checkBoxLabel_3" class="checkbox">
+                    <input type="checkbox" name="subject" value="Web Design">
+                    <span class="checkbox-text">Web Design</span>
+                     <span class="checkmark"></span>
+                  </label>
+                  </a>
+               </li>
+               <li>
+                <a tabindex="0">
+                  <label id="checkBoxLabel_4" class="checkbox">
+                    <input type="checkbox" name="subject" value="Wordpress">
+                    <span class="checkbox-text">Wordpress</span>
+                     <span class="checkmark"></span>
+                  </label>
+                  </a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+      <div class="form-group">
+        <input type="text" placeholder="Name" id="name">
+        <span class="error-message">Error</span>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email" id="email">
+        <span class="error-message"></span>
+
+      </div>
+      <div class="form-group">
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+        <span class="error-message"></span>
+
+      </div>
+      <button class="btn" type="submit">Submit</button>
+      <div class="form-group">
+      </div>
+
+     </form>
+   </section>
+
+
+</body>
+</html>

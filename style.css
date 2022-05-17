@@ -1,0 +1,193 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #070608;
+  font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+/* .test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+ul {
+  list-style: none;
+  z-index: 999;
+  padding: 50px;
+  background-color: #0a0a0a;
+}
+
+p.title {
+  font-size: 8px;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 50px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+  background-color: #070608;
+
+}
+
+input::placeholder, textarea::placeholder {
+  color: white;
+  opacity: 0.3;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  outline: none;
+
+}
+
+input:focus {
+  color: white
+}
+
+.form-group {
+  margin-bottom: 55px;
+}
+
+.btn {
+  background-color: #4947a0;
+  border: none;
+  width: 400px;
+  color: white;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+span.error-message {
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 5px;
+  opacity: 0.4;
+  display: none;
+}
+
+.error input, .error textarea {
+  border-bottom: 1px solid rgba(204, 38, 38, 0.15);
+  color: red;
+}
+
+.error input::placeholder, .error textarea::placeholder {
+  color: red;
+}
+
+.error span.error-message {
+  color: red;
+  display: flex;
+}
+
+label {
+  font-size: 10px;
+  position: relative;
+  display: block;
+  width: 100%;
+
+  
+}
+
+ul li {
+  margin-bottom: 5px;
+  height: 15px;
+}
+
+label.checkbox input, label span {
+  position: absolute;
+}
+
+span.checkmark {
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  content: '';
+  background-color: white;
+  border-radius: 50%;
+  
+}
+
+span.checkbox-text {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: auto;
+  margin-left: 10px;
+  margin-top: -5px;
+  cursor: pointer;
+
+}
+label > input {
+  width: 0;
+  height: 0;
+  left: 0;
+}
+
+input:checked ~ span.checkbox-text {
+  opacity: 0.4;
+}
+
+.filter-type-container {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+
+}
+
+.filter-content-container {
+  display: none;
+
+}
+
+.active .filter-content-container {
+  display: block;
+}
+
+.select-style {
+  position: relative;
+  cursor: pointer;
+}
+
+.select-style::after {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  left: 100%;
+  top: 50%;
+  border-radius: 50%;
+
+}
